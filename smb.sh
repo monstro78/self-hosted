@@ -4,8 +4,7 @@
 mkdir /portainer/Downloads
 sudo chown pi:pi /portainer/Downloads
 sudo chmod -R 0755 /portainer/Downloads
-sudo apt install samba samba-common-bin
-sudo apt install ntfs-3g
+sudo apt install samba samba-common-bin ntfs-3g
 
 #Replace sto min protocol me SMB3
 sed -i 's/SMB2/SMB3/g' /etc/samba/smb.conf
