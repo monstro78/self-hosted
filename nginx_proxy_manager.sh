@@ -10,3 +10,4 @@ echo "Dhmiourgia blank nginx-proxy-manager config file"
 sudo touch /portainer/Files/AppData/Config/nginx-proxy-manager/config.json || error "Egine malakia!"
 
 echo echo "Done! --> Deploy stack"
+echo "Username=admin@example.com, password=changeme"
