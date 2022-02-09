@@ -1,2 +1,2 @@
 # self-hosted
-for Raspberry-Pi self hosted server
+for Raspberry-Pi 3b+ self hosted server
