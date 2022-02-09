@@ -1,9 +1,26 @@
 #!/bin/bash
 
-echo [Downloads] >> /etc/samba/smb.conf
-comment = Download Folder on Pi >> /etc/samba/smb.conf
-path = /portainer/Downloads >> /etc/samba/smb.conf
-writable=Yes >> /etc/samba/smb.conf
-create mask=0770 >> /etc/samba/smb.conf
-directory mask-0770 >> /etc/samba/smb.conf
-public=no >> /etc/samba/smb.conf
+# Dimiourgia samba share sto pi kai dikaiomata
+mkdir /portainer/Downloads
+sudo chown pi:pi /portainer/Downloads
+sudo chmod -R 0755 /portainer/Downloads
+sudo apt install samba samba-common-bin
+sudo apt install ntfs-3g
+
+#Replace sto min protocol me SMB3
+sed -i 's/SMB2/SMB3/g' /etc/samba/smb.conf
+
+#Prosthiki section gia to share
+sudo tee -a /etc/samba/smb.conf > /dev/null  <<EOT
+[Downloads]
+comment = Download Folder on Pi
+path = /portainer/Downloads
+writable=Yes
+create mask=0770
+directory mask-0770
+public=no
+EOT
+
+#Prosthiki user kai restart service
+sudo smbpasswd -a pi
+sudo systemctl restart smbd
