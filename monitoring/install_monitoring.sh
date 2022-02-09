@@ -12,4 +12,4 @@ sudo touch /portainer/Files/AppData/Config/grafana/grafana.ini
 #Permissions
 sudo chown -R 472:472 /portainer/Files/AppData/Config/grafana/data
 
-echo "Done!"
+echo "Done! --> Deploy to stack"
