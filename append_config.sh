@@ -11,4 +11,4 @@ dtparam=sd_poll_once
 gpu_mem=8
 EOT
 
-echo Better reboot after that!!
+echo Better reboot after that
