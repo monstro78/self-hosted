@@ -1,4 +1,4 @@
-# self-hosted for Raspberry-Pi 3b+ self hosted server
+# self-hosted for Raspberry-Pi 3b+
 
 
 sudo fdisk /dev/sda  ...ktl
