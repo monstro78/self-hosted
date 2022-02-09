@@ -8,4 +8,5 @@ sudo mkdir -p /portainer/Files/AppData/Config/nginx-proxy-manager/database || er
 
 echo "Dhmiourgia blank nginx-proxy-manager config file"
 sudo touch /portainer/Files/AppData/Config/nginx-proxy-manager/config.json || error "Egine malakia!"
-echo "Setup complete. You can now install the stack using the App Template."
+
+echo echo "Done! --> Deploy stack"
