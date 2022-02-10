@@ -16,4 +16,11 @@ sudo apt install git
 git clone https://github.com/monstro78/self-hosted
 git pull
 
+
+Deploy Watchtower from App templates
+Add Env variables
+TZ --> Europe/Athens
+WATCHTOWER_SCHEDULE --> 0 0 0 * * 0
+
+
 Acknowledgement --> https://github.com/novaspirit/pi-hosted , https://github.com/SelfhostedPro/selfhosted_templates
