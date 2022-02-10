@@ -13,5 +13,6 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt clean και αφού τ
 
 sudo apt install git
 git clone https://github.com/monstro78/self-hosted
+git pull
 
 Acknowledgement --> https://github.com/novaspirit/pi-hosted , https://github.com/SelfhostedPro/selfhosted_templates
