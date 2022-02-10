@@ -12,4 +12,4 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt clean και αφού τ
 Ελεγχουμε με df -h και free -h
 
 
-Acknowlgments --> https://github.com/novaspirit/pi-hosted , https://github.com/SelfhostedPro/selfhosted_templates
+Acknowledgement --> https://github.com/novaspirit/pi-hosted , https://github.com/SelfhostedPro/selfhosted_templates
