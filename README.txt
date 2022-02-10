@@ -10,3 +10,6 @@ sudo nano /etc/fstab προσθέτουμε το swap με UUID=... /dev/sda3 sw
 sudo apt update && sudo apt full-upgrade -y && sudo apt clean και αφού τελειώσει reboot.
 
 Ελεγχουμε με df -h και free -h
+
+
+Acknowlgments --> https://github.com/novaspirit/pi-hosted , https://github.com/SelfhostedPro/selfhosted_templates
