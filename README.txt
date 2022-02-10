@@ -1,5 +1,6 @@
 # self-hosted for Raspberry-Pi 3b+
 
+#Image from https://downloads.raspberrypi.org/raspios_lite_arm64/images/
 
 sudo fdisk /dev/sda # φτιάχνουμε τα partitions
 sudo resi2fs /dev/sda2
