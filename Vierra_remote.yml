@@ -1,0 +1,202 @@
+type: conditional
+conditions:
+  - entity: remote.viera_st50_series
+    state: 'on'
+card:
+  type: grid
+  cards:
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: back
+      entity: remote.viera_st50_series
+      icon: mdi:keyboard-backspace
+      show_name: false
+      name: Back
+      hold_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: up
+      entity: remote.viera_st50_series
+      icon: mdi:arrow-up-box
+      show_name: false
+      name: Up
+      hold_action:
+        action: none
+    - type: button
+      hold_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: power
+      entity: remote.viera_st50_series
+      icon: mdi:power
+      show_name: false
+      name: Power Off
+      tap_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: left
+      entity: remote.viera_st50_series
+      icon: mdi:arrow-left-box
+      show_name: false
+      name: Left
+      hold_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: enter
+      entity: remote.viera_st50_series
+      icon: mdi:image-filter-center-focus-strong
+      show_name: false
+      name: Enter
+      hold_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: right
+      entity: remote.viera_st50_series
+      icon: mdi:arrow-right-box
+      show_name: false
+      name: Right
+      hold_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: menu
+      entity: remote.viera_st50_series
+      icon: mdi:menu
+      show_name: false
+      name: Menu
+      hold_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: down
+      entity: remote.viera_st50_series
+      icon: mdi:arrow-down-box
+      show_name: false
+      name: Down
+      hold_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: input_key
+      entity: remote.viera_st50_series
+      icon: mdi:menu-open
+      show_name: false
+      name: Input Select
+      hold_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: volume_up
+      entity: remote.viera_st50_series
+      icon: mdi:volume-plus
+      show_name: false
+      name: Volume Up
+      hold_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: mute
+      entity: remote.viera_st50_series
+      icon: mdi:volume-off
+      show_name: false
+      name: Mute
+      hold_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: volume_down
+      entity: remote.viera_st50_series
+      icon: mdi:volume-minus
+      show_name: false
+      name: Volume Down
+      hold_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: skip_prev
+      entity: remote.viera_st50_series
+      icon: mdi:skip-previous
+      show_name: false
+      name: Previous
+      hold_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: play
+      entity: remote.viera_st50_series
+      icon: mdi:play-pause
+      show_name: false
+      name: Pause
+      hold_action:
+        action: none
+    - type: button
+      tap_action:
+        action: call-service
+        service: remote.send_command
+        service_data:
+          entity_id: remote.viera_st50_series
+          command: skip_next
+      entity: remote.viera_st50_series
+      icon: mdi:skip-next
+      show_name: false
+      name: Next
+      hold_action:
+        action: none
